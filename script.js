@@ -41,7 +41,7 @@ let scoreDisplay = document.getElementById('scoreDisplay');
 function fight(playerSelection) {
     const computerSelection = getComputerChoice();
     scoreDisplay.innerText = playRound(playerSelection, computerSelection);
-    scoreDisplay.innerText += " | Your Score: " + playerScore + " Coputer: " + computerScore;
+    scoreDisplay.innerText += " | Your Score: " + playerScore + " Computer: " + computerScore;
     if (computerScore === 5) {
         scoreDisplay.innerText = "LOST!!!";
         document.getElementById('bts').style.visibility = 'hidden';
