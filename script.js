@@ -55,7 +55,6 @@ let buttons = document.querySelectorAll('button');
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         const playerSelection = button.id;
-        //scoreDisplay.innerText = playerSelection;
         fight(playerSelection);
     });
 });
